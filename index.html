@@ -12,8 +12,9 @@
         select:focus {
             outline: none;
         }
-@media (max-width: 550px) {
-           #navID {
+
+        @media (max-width: 550px) {
+            #navID {
                 display: flex;
                 background-color: rgb(238, 238, 238);
                 justify-content: space-between;
@@ -21,13 +22,13 @@
             }
 
             #bar {
-                width: 320px;
-                margin-left: 80px;
+                width: 350px;
+                margin-left: 60px;
             }
 
             .searchContainer {
-                width: 270px;
-                margin-left: 80px;
+                width: 300px;
+                margin-left: 60px;
             }
 
             #lucky {
@@ -35,13 +36,18 @@
             }
 
             .buttons {
-                padding-left: 125px;
+                padding-left: 135px;
 
             }
 
             #google {
                 padding-left: 20px;
             }
+
+            #search {
+                padding-top: 120px;
+            }
+
         }
     </style>
 </head>
@@ -52,7 +58,7 @@
         <a id="advancedS" href="advanced.html">Advanced Search</a>
     </div>
     <div id="search">
-        <a href="index.html"><img src="logo.png"></a>
+        <a href="index.html"><img id="google" src="logo.png"></a>
         <form class="form" action="https://google.com/search">
             <div class="searchContainer">
                 <i class="fa fa-search searchIcon"></i>
@@ -61,7 +67,7 @@
             </div>
             <div class="buttons">
                 <input class="button" type="submit" value="Google Search">
-                <input class="button" type="submit" name="btnI" value="I'm feeling lucky">
+                <input class="button" id="lucky" type="submit" name="btnI" value="I'm feeling lucky">
 
             </div>
         </form>
