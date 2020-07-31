@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ab93e63e5.js" crossorigin="anonymous"></script>
+    <style>
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navID">
+        <a href="index.html"><img id="logo" src="logo.png"></a>
+        <a href="index.html">Google</a>
+    </div>
+
+    <div id="advancedSearch">
+        <div id="adTitle">Advanced Search</div>
+        <hr id="line">
+
+        <form action="https://google.com/search">
+            <div id="searchBoxes">
+                <div class="searchItems" id="boldTitle">Find pages with...</div>
+                <div class="searchItems"></div>
+                <div class="searchItems" id="boldTitle">To do this in the search box.</div>
+                <div class="searchItems">all these words:</div>
+                <div class="searchItems"><input class="adBar1" type="text" name="as_q"></div>
+                <div class="searchItems">Type the important words: tri-colour rat terrier</div>
+                <div class="searchItems">this exact word or phrase:</div>
+                <div class="searchItems"><input class="adBar1" type="text" name="as_epq"></div>
+                <div class="searchItems">Put exact words in quotes: "rat terrier"</div>
+                <div class="searchItems">any of these words:</div>
+                <div class="searchItems"><input class="adBar1" type="text" name="as_oq"></div>
+                <div class="searchItems">Type OR between all the words you want: miniature OR standard</div>
+                <div class="searchItems">none of these words:”</div>
+                <div class="searchItems"><input class="adBar1" type="text" name="as_eq"></div>
+                <div class="searchItems">Put a minus sign just before words that you don't want: -rodent, -"Jack
+                    Russell"</div>
+
+            </div>
+
+            <input id="adButton" class="button" type="submit" value="Advanced Search">
+        </form>
+    </div>
+</body>
+
+</html>
