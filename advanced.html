@@ -11,6 +11,30 @@
         select:focus {
             outline: none;
         }
+
+        @media (max-width: 550px) {
+            #searchBoxes {
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 40px;
+                grid-row-gap: 30px;
+                grid-template-columns: 200px;
+            }
+
+            #details {
+                display: none;
+            }
+
+            .adBar1 {
+                width: 380px;
+            }
+
+            #adButton {
+                background-color: #4285f4;
+                color: white;
+                margin-left: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -26,21 +50,23 @@
 
         <form action="https://google.com/search">
             <div id="searchBoxes">
-                <div class="searchItems" id="boldTitle">Find pages with...</div>
+                <div class="searchItems" class="boldTitle">Find pages with...</div>
                 <div class="searchItems"></div>
-                <div class="searchItems" id="boldTitle">To do this in the search box.</div>
+                <div class="searchItems" class="boldTitle" id="details">To do this in the search box.</div>
                 <div class="searchItems">all these words:</div>
                 <div class="searchItems"><input class="adBar1" type="text" name="as_q"></div>
-                <div class="searchItems">Type the important words: tri-colour rat terrier</div>
+                <div class="searchItems" id="details">Type the important words: tri-colour rat terrier</div>
                 <div class="searchItems">this exact word or phrase:</div>
                 <div class="searchItems"><input class="adBar1" type="text" name="as_epq"></div>
-                <div class="searchItems">Put exact words in quotes: "rat terrier"</div>
+                <div class="searchItems" id="details">Put exact words in quotes: "rat terrier"</div>
                 <div class="searchItems">any of these words:</div>
                 <div class="searchItems"><input class="adBar1" type="text" name="as_oq"></div>
-                <div class="searchItems">Type OR between all the words you want: miniature OR standard</div>
+                <div class="searchItems" id="details">Type OR between all the words you want: miniature OR standard
+                </div>
                 <div class="searchItems">none of these words:”</div>
                 <div class="searchItems"><input class="adBar1" type="text" name="as_eq"></div>
-                <div class="searchItems">Put a minus sign just before words that you don't want: -rodent, -"Jack
+                <div class="searchItems" id="details">Put a minus sign just before words that you don't want: -rodent,
+                    -"Jack
                     Russell"</div>
 
             </div>
